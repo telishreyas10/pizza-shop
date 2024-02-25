@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Oct, 2018, 10:49:42 PM
+    Author     : Shreyas
+*/
+fieldset,
+                                    label {
+                                      margin: 0;
+                                      padding: 0;
+                                      
+                                    }
+
+                                    .rating,.rating2,.rating3,.rating4,.rating5 {
+                                      border: none;
+                                      float: left;
+                                    }
+
+                                    .rating>input , .rating2>input , .rating3>input , .rating4>input , .rating5>input{
+                                      display: none;
+                                    }
+
+                                    .rating>label:before , .rating2>label:before , .rating3>label:before , .rating4>label:before , .rating5>label:before {
+                                      margin: 5px;
+                                      font-size: 1.25em;
+                                      font-family: FontAwesome;
+                                      display: inline-block;
+                                      content: "\f005";
+                                    }
+
+                                    .rating>.half:before , .rating2>.half:before , .rating3>.half:before , .rating4>.half:before , .rating5>.half:before {
+                                      content: "\f089";
+                                      position: absolute;
+                                    }
+
+                                    .rating>label , .rating2>label , .rating3>label , .rating4>label , .rating5>label {
+                                      color: #ddd;
+                                      float: right;
+                                    }
+
+                                    .rating>input:checked~label, .rating2>input:checked~label, .rating3>input:checked~label, .rating4>input:checked~label, .rating5>input:checked~label,
+
+                                    /* show gold star when clicked */
+
+                                    .rating:not(:checked)>label:hover, .rating2:not(:checked)>label:hover, .rating3:not(:checked)>label:hover, .rating4:not(:checked)>label:hover, .rating5:not(:checked)>label:hover,
+
+                                    /* hover current star */
+
+                                    .rating:not(:checked)>label:hover~label, .rating2:not(:checked)>label:hover~label, .rating3:not(:checked)>label:hover~label, .rating4:not(:checked)>label:hover~label, .rating5:not(:checked)>label:hover~label{
+                                      color: #FFD700;
+                                    }
+
+
+                                    /* hover previous stars in list */
+
+                                    .rating>input:checked+label:hover,
+                                     .rating2>input:checked+label:hover,
+                                      .rating3>input:checked+label:hover,
+                                       .rating4>input:checked+label:hover,
+                                        .rating5>input:checked+label:hover,
+
+                                    /* hover current star when changing rating */
+
+                                    .rating>input:checked~label:hover,
+                                    .rating2>input:checked~label:hover,
+                                    .rating3>input:checked~label:hover,
+                                    .rating4>input:checked~label:hover,
+                                    .rating5>input:checked~label:hover,
+                                    
+                                    .rating>label:hover~input:checked~label,
+                                     .rating2>label:hover~input:checked~label,
+                                      .rating3>label:hover~input:checked~label,
+                                       .rating4>label:hover~input:checked~label,
+                                        .rating5>label:hover~input:checked~label,
+                                     
+
+                                    /* lighten current selection */
+
+                                    .rating>input:checked~label:hover~label,
+                                    .rating2>input:checked~label:hover~label,
+                                    .rating3>input:checked~label:hover~label,
+                                    .rating4>input:checked~label:hover~label,
+                                    .rating5>input:checked~label:hover~label{
+                                      color: #FFED85;
+                                    }
+
+                                    
